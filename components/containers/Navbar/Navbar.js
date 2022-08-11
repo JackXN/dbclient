@@ -5,7 +5,7 @@ import {
   Menu,
   MenuLink,
 } from "./NavbarElements";
-import {Link} from 'react-scroll'
+import Link from 'next/link'
 
 
 
@@ -27,10 +27,11 @@ function Navbar() {
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-      <MenuLink ><Link to='home' smooth={true} spy={100} duration={600}>Home</Link></MenuLink>
-        <MenuLink><Link to='about' smooth={true} spy={100} duration={600}>About Me</Link></MenuLink>
-        <MenuLink><Link to='skills' smooth={true} spy={100} duration={600}>Skills</Link></MenuLink>
-        <MenuLink><Link to='projects' smooth={true} spy={100} duration={600}>Projects</Link></MenuLink>
+      <MenuLink href='home'><Link to='home' >Dashboard</Link></MenuLink>
+        <MenuLink href='about'><Link to='about' >Projects</Link></MenuLink>
+        <MenuLink><Link to='skills' >Network</Link></MenuLink>
+        <MenuLink><Link to='projects'>Music</Link></MenuLink>
+        <MenuLink><Link to='projects'>Other</Link></MenuLink>
       </Menu>
     </Nav>
   );

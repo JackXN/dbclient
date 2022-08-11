@@ -6,8 +6,12 @@ export const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: none;
+  background: #3E3838;
   font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: rgba(100, 50, 60, 0.2) 0px 7px 29px 0px;
+  font-family: Bangers;
 `;
 
 export const Hamburger = styled.div`
@@ -55,7 +59,7 @@ export const MenuLink = styled.a`
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in;
-  font-size: 15px;
+  font-size: 30px;
   border-bottom: 2px solid transparent
   color: white;
 background :
@@ -68,7 +72,7 @@ background-repeat: no-repeat;
 transition: background-size 400ms;
   float:left;
 &:hover {
-    color: #f00946;
+    color: ;
     transform: scale(1.2);
     transition: all 0.3s ease;
 }
